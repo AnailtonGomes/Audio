@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+
+<html lang="pt-BR"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <title>Controle de Áudio</title> 
+
+</head> 
+
+<body> 
+
+    <audio id="audio" src="seu-audio.mp3" controls></audio> 
+
+    <button onclick="setPlaybackRate(1)">1x</button> 
+
+    <button onclick="setPlaybackRate(2)">2x</button> 
+
+    <button onclick="setPlaybackRate(3)">3x</button> 
+
+  
+
+    <script> 
+
+        const audio = document.getElementById('audio'); 
+
+        function setPlaybackRate(rate) { 
+
+            audio.playbackRate = rate; 
+
+        } 
+
+    </script> 
+
+</body> 
+
+</html> 
+
+
+ 
